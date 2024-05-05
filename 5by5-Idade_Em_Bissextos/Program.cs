@@ -1,14 +1,9 @@
 ﻿using _5by5_Idade_Em_Bissextos;
-
-string name, job;
-int age;
+Pessoa pessoa = new Pessoa();
 Console.WriteLine("Write your name: ");
-name = Console.ReadLine();
+pessoa.setName(Console.ReadLine());
 Console.WriteLine("Write your job: ");
-job = Console.ReadLine();
+pessoa.setJob(Console.ReadLine());
 Console.WriteLine("Write your age: ");
-age = int.Parse(Console.ReadLine());
-
-Pessoa pessoa = new Pessoa(name, age,job);
-pessoa.LeapYears();
-pessoa.Print();
+pessoa.setAge(int.Parse(Console.ReadLine()));
+Console.WriteLine(pessoa.ToString());
